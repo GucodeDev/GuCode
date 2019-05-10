@@ -1,2 +1,0 @@
-# gucode
-html 5
