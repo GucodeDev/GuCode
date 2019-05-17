@@ -1,50 +1,72 @@
 # gucode
 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Compre bem</title>
+</head>
 <body>
-<header class="o-header">Header</header> 
-<aside class="o-aside">Aside</aside> 
-<main class="o-main">Main</main> 
-<footer class="o-footer">Footer</footer>
-</body>
+<!-- Start your code here -->
 
+<div class="container">
+  <main class="main">main</main>
+  <header class="header">header</header>
+  <aside class="asideE">Sb 1</aside>
+  <aside class="asideD">Sb2</aside>
+  <footer class="footer"><div class="info">DEV-GUCODE</div></footer>
+  
+</div>
+
+ 
 <style>
 
+.lw { font-size: 60px; }
 
-body { 
-    display: grid; 
-    grid-template-areas: "header header header" 
-                         "aside main main" 
-                         "footer footer footer"; 
+*{margin: 0;
+padding: 0;}
+
+.container{
+  min-height: 100px;
+  font-family: Helvetica;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 50px 790px 50px;
+  grid-gap: 10px;
+  grid-template-areas:
+    'header header header'
+    'asideE main asideD'
+    'footer footer footer';}
+
+.info{
+  
+  margin-top:0;
+  text-shadow: 24px 8px 6px #2F4F4F;
+
+-webkit-transform: scale(0.9);
+opacity: 0.6;
+
+font-family: Verdana, Geneva, sans-serif;
+
+font-size: 20pt;
+
+color: #888888;
+
+text-align: right;
+ 
 }
 
-.o-header { 
-    grid-area: header; 
-} 
+.header{grid-area: header;border: solid red;}
 
-.o-aside { 
-    grid-area: aside; 
-} 
+.main{grid-area: main;border: solid green;}
 
-.o-main { 
-    grid-area: main; 
-} 
+.asideE{grid-area: asideE;border: solid yellow;}
 
-.o-footer { 
-    grid-area: footer; 
-}
+.asideD{grid-area: asideD;border:  solid blue;}
 
-.o-header, .o-aside, .o-main, .o-footer { 
-    background: #BC20E2; 
-    color: #FDFDFD; 
-}
-
-body { 
-    grid-gap: 1rem; 
-}
-
-body { 
-    grid-template-columns: auto auto auto; 
-    grid-template-rows: auto 100vh auto; 
-}
+.footer{grid-area: footer;border: solid silver;background-color: #E2E2E2;}
 
 </style>
+<!-- End your code here -->
+</body>
+</html>
