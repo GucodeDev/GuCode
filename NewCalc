@@ -1,33 +1,37 @@
-<div class="fundo">
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
   
+  <div class="fundo">
+    
   <div class="container">
-    <div class="disp" id="di">DISPLAY</div>
-    <button class="b0" id="a0" value=0 onclick="bt()">0</button>
-    <button class="b1" id="a1" onclick="bt()">1</button>
-    <button class="b2" id="a2" value=2 onclick="bt()">2</button>
-    <button class="b3" id="a3" value=3 onclick="bt()">3</button>
-    <button class="b4" id="a4" value=4 onclick="bt()">4</button>
-    <button class="b5" id="a5" value=5 onclick="bt()">5</button>
-    <button class="b6" id="a6" value=6 onclick="bt()">6</button>
-    <button class="b7" id="a7" value=7 onclick="bt()">7</button>
-    <button class="b8" id="a8" value=8 onclick="bt()">8</button>
-    <button class="b9" id="a9" value=9 onclick="bt()">9</button>
-    <button class="d"  id="ad" value=/ onclick="bt()">/</button>
-    <button class="m"  id="am" value=* onclick="bt()">*</button>
-    <button class="s"  id="as" value=+ onclick="bt()">+</button>
-    <button class="su" id="au" value=- onclick="bt()">-</button>
-    <button class="i"  id="ai" value=i onclick="bt()">=</button>
-    <button class="c"  id="ac" value=c onclick="bt()">C</button>
-    
-    
-    
-  </div>
+   <div class="disp" id="di">DISPLAY</div>
+    <button class="b0" id="a0" value=0>0</button>
+    <button class="b1" id="a1" value=1>1</button>
+    <button class="b2" id="a2" value=2>2</button>
+    <button class="b3" id="a3" value=3>3</button>
+    <button class="b4" id="a4" value=4>4</button>
+    <button class="b5" id="a5" value=5>5</button>
+    <button class="b6" id="a6" value=6>6</button>
+    <button class="b7" id="a7" value=7>7</button>
+    <button class="b8" id="a8" value=8>8</button>
+    <button class="b9" id="a9" value=9>9</button>
+    <button class="d"  id="ad" value=/>/</button>
+    <button class="m"  id="am" value=*>*</button>
+    <button class="s"  id="as" value=+>+</button>
+    <button class="su" id="au" value=->-</button>
+    <button class="i"  id="ai" value='='>=</button>
+    <button class="c"  id="ac" value=C>C</button>
+   </div>
   
-  
-</div>
 
-
-
+</body>
+</html>
 
 .container{
   width:280px;
@@ -45,14 +49,14 @@
 }
 
 .fundo{
-  margin-left:35%; margin-top:10%;
+margin-left:35%; margin-top:10%;
 width:285px;
 height:485px;
 background-color:#9AAF9A;
 
 }
 
-.disp {
+.disp {  
 text-align:center;
 background-color:#818D8F;
 height:75px;
@@ -62,6 +66,7 @@ margin-top:10px;
 margin-left:7px;
 border:solid;
 }
+
 .b0 {
 background-color:#33646B;
 height:50px;
@@ -172,13 +177,123 @@ width:50px;
 grid-area:c;
 }
 
-java
 
-function bt() {
-  if(document.getElementById("a1").onclick){document.getElementById("di").innerHTML = 1;
-  }
-       
-        
-   
-}  
+
+
+const a0=document.getElementById("a0");
+a0.addEventListener('click', function(){
+  const v0=a0.value;
+  const a=document.getElementById("di");
+  a.innerHTML=v0;
+})
+
+const a1=document.getElementById("a1");
+a1.addEventListener('click', function(){
+  const v1=a1.value;
+  const b=document.getElementById("di");
+  b.innerHTML=v1;
+})
+
+
+const a2=document.getElementById("a2");
+a2.addEventListener('click', function(){
+  const v2=a2.value;
+  const c=document.getElementById("di");
+  c.innerHTML=v2;
+})
+
+const a3=document.getElementById("a3");
+a3.addEventListener('click', function(){
+  const v3=a3.value;
+  let d=document.getElementById("di");
+  d.innerHTML=v3;
+})
+
+const a4=document.getElementById("a4");
+a4.addEventListener('click', function(){
+  const v4=a4.value;
+  let e=document.getElementById("di");
+  e.innerHTML=v4;
+})
+
+const a5=document.getElementById("a5");
+a5.addEventListener('click', function(){
+  const v5=a5.value;
+  let f=document.getElementById("di");
+  f.innerHTML=v5;
+})
+
+const a6=document.getElementById("a6");
+a6.addEventListener('click', function(){
+  const v6=a6.value;
+  let g=document.getElementById("di");
+  g.innerHTML=v6;
+})
+
+const a7=document.getElementById("a7");
+a7.addEventListener('click', function(){
+  const v7=a7.value;
+  let h=document.getElementById("di");
+  h.innerHTML=v7;
+})
+
+const a8=document.getElementById("a8");
+a8.addEventListener('click', function(){
+  const v8=a8.value;
+  let i=document.getElementById("di");
+  i.innerHTML=v8;
+})
+
+const a9=document.getElementById("a9");
+a9.addEventListener('click', function(){
+  const v9=a9.value;
+  let j=document.getElementById("di");
+  j.innerHTML=v9;
+})
+
+///////////////SIMBOLOS//////////////////////////
+
+const divi=document.getElementById("ad");
+divi.addEventListener('click', function(){
+  const v10=divi.value;
+  let l=document.getElementById("di");
+  l.innerHTML=v10;
+})
+
+
+const mult=document.getElementById("am");
+mult.addEventListener('click', function(){
+  const v11=mult.value;
+  let m=document.getElementById("di");
+  m.innerHTML=v11;
+})
+
+const soma=document.getElementById("as");
+soma.addEventListener('click', function(){
+  const v12=soma.value;
+  let n=document.getElementById("di");
+  n.innerHTML=v12;
+})
+
+const subtr=document.getElementById("au");
+subtr.addEventListener('click', function(){
+  const v13=subtr.value;
+  let o=document.getElementById("di");
+  o.innerHTML=v13;
+})
+
+const ig=document.getElementById("ai");
+ig.addEventListener('click', function(){
+  const v14=ig.value;
+  let p=document.getElementById("di");
+  p.innerHTML=v14;
+})
+
+const cl=document.getElementById("ac");
+cl.addEventListener('click', function(){
+  const v15=cl.value;
+  let q=document.getElementById("di");
+  q.innerHTML=v15;
+})
+
 
