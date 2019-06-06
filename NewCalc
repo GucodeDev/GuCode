@@ -326,3 +326,104 @@ cl.addEventListener('click', function(){
 })
 
 
+
+
+
+
+
+JQUERY
+
+
+
+$("#a0").click(function (event) {
+if(n1==null){n1=0;}else n2=0;})
+
+$("#a1").click(function (event) {
+if(n1==null){n1=1;}else n2=1;})
+
+$("#a2").click(function (event) {
+if(n1==null){n1=2;}else n2=2;})
+
+$("#a3").click(function (event) {
+if(n1==null){n1=3;}else n2=3;})
+
+$("#a4").click(function (event) {
+if(n1==null){n1=4;}else n2=4;})
+
+$("#a5").click(function (event) {
+if(n1==null){n1=5;}else n2=5;})
+
+$("#a6").click(function (event) {
+if(n1==null){n1=6;}else n2=6;})
+
+$("#a7").click(function (event) {
+if(n1==null){n1=7;}else n2=7;})
+
+$("#a8").click(function (event) {
+if(n1==null){n1=8;}else n2=8;})
+
+$("#a9").click(function (event) {
+if(n1==null){n1=9;}else n2=9;})
+
+let n1=null;
+let n2=null;
+let op=null;
+
+
+$("#ad").click(function(event){op="/";alert(op)})
+$("#as").click(function(event){op="+";alert(op)})
+$("#am").click(function(event){op="*";alert(op)})
+$("#au").click(function(event){op="-";alert(op)})
+
+let operacao;
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+
+<div class="fundo">
+    
+  <div class="container">
+   <div class="disp" id="di">
+     
+<div class="n1" id="n1">n1</div>
+<div class="op" id="op">op</div>
+<div class="n2" id="n2">n2</div>
+<div class="re" id="re">re</div>
+     
+     
+   </div>
+    <button class="b0" id="a0" value=0 >0</button>
+    <button class="b1" id="a1" value=1>1</button>
+    <button class="b2" id="a2" value=2>2</button>
+    <button class="b3" id="a3" value=3>3</button>
+    <button class="b4" id="a4" value=4>4</button>
+    <button class="b5" id="a5" value=5>5</button>
+    <button class="b6" id="a6" value=6>6</button>
+    <button class="b7" id="a7" value=7>7</button>
+    <button class="b8" id="a8" value=8>8</button>
+    <button class="b9" id="a9" value=9>9</button>
+    <button class="d"  id="ad" value=/>/</button>
+    <button class="m"  id="am" value=*>*</button>
+    <button class="s"  id="as" value=+>+</button>
+    <button class="su" id="au" value=->-</button>
+    <button class="i"  id="ai" value='='>=</button>
+    <button class="c"  id="ac" value=C>C</button>
+   </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
