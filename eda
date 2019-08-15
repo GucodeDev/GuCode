@@ -8,9 +8,6 @@ primeira função especificada. Depois a segunda função especificada deve ser 
 dados dos dois registros.
 
 
-
-
-
 import java.util.Scanner;
 
 public class EstruturasHeterogeneas {
@@ -60,7 +57,9 @@ public class Pessoa {
 
 
 
-
+2) O algoritmo da questão anterior deve ser modificado para criar um vetor de 4 pessoas. No programa
+principal deve ser criado um loop para carregar todo o vetor de pessoas. E criado outro loop para mostrar
+todos os dados carregados no loop anterior.
 
 
 
@@ -125,3 +124,58 @@ public class Pessoa {
 }
 
 
+
+
+
+4) Faça um algoritmo que declare um registro produto, com os campos codigo (inteiro) nome (string 30) e
+preco (real). No bloco principal do algoritmo, crie um vetor com 5 registro do produto. Os registros
+deve ser iniciados respectivamente com os dados:
+3241 “Pé de moleque” R$ 0,75
+3124 “Cocada baiana” R$ 0,60
+1273 “Maria mole” R$ 0,45
+2315 “Cajuzinho” R$ 0,80
+3286 “Chocolate-barra” R$ 1,50
+Ao final, todos os produtos devem ser mostrados na tela.
+
+class program {
+  public static void main(String[] args) {
+    Produto reg[] = new Produto[5];
+   	reg[0].codigo=3241;
+    reg[0].nome="“Pé de moleque”";
+    reg[0].preco=0.75;
+    
+    reg[1].codigo=3124;
+    reg[1].nome="“Cocada baiana”";
+    reg[1].preco=0.60;
+    
+    reg[2].codigo=1273;
+    reg[2].nome="“Maria mole”";
+    reg[2].preco=0.45;
+    
+    reg[3].codigo=2315;
+    reg[3].nome="“Cajuzinho”";
+    reg[3].preco=0.80;
+    
+    reg[4].codigo=3286;
+    reg[4].nome="“Chocolate-barra”";
+    reg[4].preco=1.50;
+    
+    for(int i=0; i<reg.length; i++){
+      System.out.println(reg[i].codigo);
+      System.out.println(reg[i].nome);
+      System.out.println(reg[i].preco);
+    }
+  }
+}
+
+
+
+class Produto {
+ 
+    
+   int codigo;
+   String nome;
+   double preco;
+    
+  
+}
